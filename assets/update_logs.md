@@ -1,3 +1,13 @@
+### 2023.1.30
+* Use an MLP to predict the surface normals as in Magic3D to avoid finite difference / second order gradient, generation quality is greatly improved.
+* More efficient two-pass raymarching in training inspired by nerfacc.
+
+### 2022.12.3
+* Support Stable-diffusion 2.0 base.
+
+### 2022.11.15
+* Add the vanilla backbone that is pure-pytorch.
+
 ### 2022.10.9
 * The shading (partially) starts to work, at least it won't make scene empty. For some prompts, it shows better results (less severe Janus problem). The textureless rendering mode is still disabled.
 * Enable shading by default (--albedo_iters 1000).
